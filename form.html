@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Top-Up Game</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Top-Up Game RulzShop</h1>
+        <form id="topup-form">
+            <div class="form-group">
+                <label for="username">User ID</label>
+                <input type="number" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="game">Game:</label>
+                <select id="game" name="game" required>
+                    <option value="ML">ML</option>
+                    <option value="FF">FF</option>
+                    <option value="PUBG">PUBG</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="amount">Pilih Paket:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="payment">Pembayaran:</label>
+                <select id="payment" name="payment" required>
+                    <option value="Dana">Dana</option>
+                    <option value="GoPay">GoPay</option>
+                    <option value="Pulsa">Pulsa</option>
+                </select>
+            </div>
+            <button type="button" class="topup-button" id="topup-button">Top-Up</button>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const topupForm = document.getElementById("topup-form");
+            const topupButton = document.getElementById("topup-button");
+
+            topupButton.addEventListener("click", function () {
+                const username = document.getElementById("username").value;
+                const game = document.getElementById("game").value;
+                const amount = document.getElementById("amount").value;
+                const payment = document.getElementById("payment").value;
+
+                const alertMessage = `Pembayaran Suksess!!!\n\nUser ID: ${username}\nGame: ${game}\nPaket: ${amount}\nPembayaran: ${payment}\n\nThank You :)`;
+                alert(alertMessage);
+            });
+        });
+    </script>
+</body>
+
+</html>

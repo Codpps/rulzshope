@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<ht lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pubg.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>RulzShop</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="ff.html">FF</a></li>
+                <li><a href="mlbb.html">ML</a></li>
+                <li><a href="pubg.html">PUBG</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider-container">
+        <div class="slider">
+          <img src="asset/pubg1.jpeg" alt="Gambar 1">
+          <img src="asset/pubg2.jpg" alt="Gambar 2">
+          <img src="asset/pubg3.jpeg" alt="Gambar 3">
+        </div>
+      </div> 
+      <hr class="horizontal-line">
+      <div class="halaman1">
+        <div class="card-container">
+            <div class="card">
+                <h4>Paket 1</h4>
+                <img src="asset/uc.png" alt="Gambar 1">
+                <h3>70 UC</h3>
+                <p>Rp17.000</p>
+                <a href="form.html">Beli</a>
+            </div>
+            <div class="card">
+                <h4>Paket 2</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>140 UC</h3>
+                <p>Rp 35.000</p>
+                <a href="form.html">Beli</a>
+            </div>
+            <div class="card">
+                <h4>Paket 3</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>210 UC</h3>
+                <p>Rp 50.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket  4</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>500 UC</h3>
+                <p>Rp 110.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket 5</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>720 UC</h>
+                <p>Rp 162.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket 6</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>1460 UC</h3>
+                <p>Rp 300.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket 7</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>2500 UC</h3>
+                <p>Rp 520.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+        </div>
+      </div>     
+      <hr class="horizontal-line1">
+      <div class="halaman2">
+        <div class="card-container">
+            <div class="card">
+                <h4>Paket 8</h4>
+                <img src="asset/uc.png" alt="Gambar 1">
+                <h3>3000 UC</h3>
+                <p1>Rp620.000</p1>
+                <p>Rp.580.000</p>
+                <a href="form.html">Beli</a>
+            </div>
+            <div class="card">
+                <h4>Paket 9</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>4000 UC</h3>
+                <p1>Rp950.000</p1>
+                <p>Rp900.000</p>
+                <a href="form.html">Beli</a>
+            </div>
+            <div class="card">
+                <h4>Paket 10</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>5000 UC</h3>
+                <p1>Rp 1.500.000</p1>
+                <p>RP 1.000.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket 11</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>6000 UC</h3>
+                <p1>Rp 2.000.000</p1>
+                <P>Rp 1.700.000</P>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket 12</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>8000 UC</h3>
+                <p1>Rp 3.000.000</p1>
+                <p>Rp 2.800.000</p>
+                <a href="form.html">Beli</a>
+    
+            </div>
+            <div class="card">
+                <h4>Paket 13</h4>
+                <img src="asset/uc.png" alt="Gambar 2">
+                <h3>10000 UC</h3>
+                <p1>Rp 4.000.000</p1>
+                <p>Rp 3.800.000</p>
+                <a href="form.html">Beli</a>
+            </div>
+        </div>
+      </div>  
+    <script>
+        const slider = document.querySelector('.slider');
+let slideIndex = 0;
+
+function slideImage() {
+  slideIndex++;
+  if (slideIndex === slider.children.length) {
+    slideIndex = 0;
+  }
+  const transformValue = `translateX(-${slideIndex * 100}%)`;
+  slider.style.transform = transformValue;
+}
+
+setInterval(slideImage, 3000);
+
+    </script>
+</body>
+</html>
